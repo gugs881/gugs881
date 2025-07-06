@@ -13,7 +13,7 @@
 ## 📄 Resume
 
 You can view or download my professional resume here:  
-📎 [Access My CV (Google Drive)](https://drive.google.com/drive/folders/1kJGXrEcp2YmMt3WnTjVRxzTUgXJrzvdi?usp=sharing)
+🗂️ [Access My CV (Google Drive)](https://drive.google.com/drive/folders/1kJGXrEcp2YmMt3WnTjVRxzTUgXJrzvdi?usp=sharing)
 
 ---
 
