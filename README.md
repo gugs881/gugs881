@@ -1,12 +1,10 @@
-</p>
-
 ---
 
 ## Hi, I'm a Data Scientist
 
-- 🎓 Education: Data Science
-- 🧠 Interests: AI, NLP, Data Visualization, Deep Learning
-- 📊 Favorite Tools: Python, Pandas, Scikit-Learn, SQL, Flask, Git
+- 🎓 Education: Data Science  
+- 🧠 Interests: AI, NLP, Data Visualization, Deep Learning  
+- 📊 Favorite Tools: Python, Pandas, Scikit-Learn, SQL, Flask, Git  
 
 ---
 
@@ -27,6 +25,7 @@ You can view or download my professional resume here:
 ![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/-Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+![R](https://img.shields.io/badge/-R-276DC3?style=flat-square&logo=r&logoColor=white)
 
 ---
 
