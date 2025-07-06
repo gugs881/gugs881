@@ -1,10 +1,10 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=92eaff&height=120&section=header"/>
 
-<h1 align="center">Olá! Eu sou o Gustavo Ferreira 👋</h1>
+
+
 
 <p align="center">
-  Cientista de Dados | Pythonista | Apaixonado por IA e Machine Learning<br>
-  Brasil 🇧🇷 | 21 anos
+  Cientista de Dados 
+  
 </p>
 
 ---
@@ -49,4 +49,4 @@ Sou um cientista de dados com foco em **aprendizado de máquina**, **tratamento 
   <a href="https://instagram.com/gustavo_ferreiraz"><img src="https://img.shields.io/badge/-Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white"></a>
 </p>
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=92eaff&height=120&section=footer"/>
+
