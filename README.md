@@ -1,27 +1,52 @@
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=92eaff&height=120&section=header"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=92eaff&height=120&section=header"/>
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com/?color=92eaff&size=35&center=true&vCenter=true&width=1000&lines=HELLO,+My+name+is+Gustavo+Ferreira;I'm+21+years+old;I'm+from+Brazil;I+am+a+Data+Scientist;Be+Welcome!+:%29)](https://git.io/typing-svg)
+<h1 align="center">Olá! Eu sou o Gustavo Ferreira 👋</h1>
 
+<p align="center">
+  Cientista de Dados | Pythonista | Apaixonado por IA e Machine Learning<br>
+  Brasil 🇧🇷 | 21 anos
+</p>
 
+---
 
+## 🚀 Sobre Mim
 
+Sou um cientista de dados com foco em **aprendizado de máquina**, **tratamento de dados** e **resolução de problemas com código limpo e eficiente**. Trabalho com ferramentas modernas e gosto de aprender continuamente novas tecnologias para aplicar em projetos práticos.
 
+- 🎓 Formação: Ciência de Dados
+- 🧠 Interesses: IA, NLP, Visualização de Dados, Deep Learning
+- 📊 Ferramentas favoritas: Python, Pandas, Scikit-Learn, SQL, Flask, Git
 
+---
 
+## 🛠️ Tecnologias e Ferramentas
+
+![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/-Pandas-150458?style=flat-square&logo=pandas)
+![NumPy](https://img.shields.io/badge/-NumPy-013243?style=flat-square&logo=numpy)
+![Scikit-Learn](https://img.shields.io/badge/-Scikit--Learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![SQL](https://img.shields.io/badge/-SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+![Git](https://img.shields.io/badge/-Git-F05032?style=flat-square&logo=git&logoColor=white)
+![Flask](https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask)
+![Jupyter](https://img.shields.io/badge/-Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white)
+
+---
+
+## 📈 GitHub Stats
 
 <div align="center">  
-  <img width="49%" height="195px" src="https://github-readme-stats.vercel.app/api?username=gugs881&show_icons=true&count_private=true&hide_border=true&title_color=0004ff&icon_color=0004ff&text_color=0004ff&bg_color=0d1117" alt="Gustavo Ferreira github stats" /> 
-  <img width="41%" height="195px" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gugs881&layout=compact&hide_border=true&title_color=92eaff&text_color=92eaff&bg_color=0d1117" />
+  <img width="48%" src="https://github-readme-stats.vercel.app/api?username=gugs881&show_icons=true&hide_border=true&title_color=0004ff&icon_color=0004ff&text_color=0004ff&bg_color=0d1117" alt="Gustavo Ferreira GitHub Stats" /> 
+  <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gugs881&layout=compact&hide_border=true&title_color=92eaff&text_color=92eaff&bg_color=0d1117" />
 </div>
 
+---
 
-<div align="center"> 
-<a href="https://instagram.com/gustavo_ferreiraz" target="_blank"><img src="https://img.shields.io/badge/-Instagram-%23E4405F?style=for-the-badge&logo=instagram&logoColor=white"</a>
-<a href = "mailto:gustavodovaleferreira@gmail.com"> <img src="https://img.shields.io/badge/-Gmail-%23333?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
-<a href="https://www.linkedin.com/in/gustavo-do-vale-ferreira-a48090219/" target="_blank"><img src="https://img.shields.io/badge/-LinkedIn-%230077B5?style=for-the-badge&logo=linkedin&logoColor=white" style="border-radius: 30px" target="_blank"></a> 
- </div>
- 
+## 📬 Contato
 
+<p align="center">
+  <a href="mailto:gustavodovaleferreira@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=gmail&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/gustavo-do-vale-ferreira-a48090219/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white"></a>
+  <a href="https://instagram.com/gustavo_ferreiraz"><img src="https://img.shields.io/badge/-Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white"></a>
+</p>
 
-
-<img width=100% src="https://capsule-render.vercel.app/api?type=waving&color=92eaff&height=120&section=footer"/>
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=92eaff&height=120&section=footer"/>
