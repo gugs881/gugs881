@@ -10,6 +10,13 @@
 
 ---
 
+## 📄 Resume
+
+You can view or download my professional resume here:  
+📎 [Access My CV (Google Drive)](https://drive.google.com/drive/folders/1kJGXrEcp2YmMt3WnTjVRxzTUgXJrzvdi?usp=sharing)
+
+---
+
 ## 🛠️ Technologies & Tools
 
 ![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
