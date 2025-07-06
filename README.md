@@ -2,16 +2,13 @@
 
 
 
-<p align="center">
-  Cientista de Dados 
+
   
 </p>
 
 ---
 
-## 🚀 Sobre Mim
-
-Sou um cientista de dados com foco em **aprendizado de máquina**, **tratamento de dados** e **resolução de problemas com código limpo e eficiente**. Trabalho com ferramentas modernas e gosto de aprender continuamente novas tecnologias para aplicar em projetos práticos.
+## Hi, I'm a Data Scientist
 
 - 🎓 Formação: Ciência de Dados
 - 🧠 Interesses: IA, NLP, Visualização de Dados, Deep Learning
