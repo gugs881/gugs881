@@ -45,9 +45,10 @@ You can view or download my professional resume here:
 
 ---
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/[USERNAME]/[USERNAME]/output/pacman-contribution-graph-dark.svg">
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/[USERNAME]/[USERNAME]/output/pacman-contribution-graph.svg">
-  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/[USERNAME]/[USERNAME]/output/pacman-contribution-graph.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/gugs881/gugs881/output/pacman-contribution-graph-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/gugs881/gugs881/output/pacman-contribution-graph.svg">
+  <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/gugs881/gugs881/output/pacman-contribution-graph.svg">
 </picture>
 
-_gerado com [abozanona/pacman-contribution-graph](https://gugs881.github.io/pacman-contribution-graph/)_
+_gerado com [abozanona/pacman-contribution-graph](https://abozanona.github.io/pacman-contribution-graph/)_
+
