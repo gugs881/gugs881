@@ -36,11 +36,6 @@ You can view or download my professional resume here:
 
 ## 📬 Contact
 
-<p align="center">
-  <a href="mailto:gustavodovaleferreira@gmail.com"><img src="https://img.shields.io/badge/-Gmail-D14836?style=flat-square&logo=gmail&logoColor=white"></a>
-  <a href="https://www.linkedin.com/in/gustavo-do-vale-ferreira-a48090219/"><img src="https://img.shields.io/badge/-LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white"></a>
-  <a href="https://instagram.com/gustavo_ferreiraz"><img src="https://img.shields.io/badge/-Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white"></a>
-</p>
 
 
 
