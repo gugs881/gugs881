@@ -50,5 +50,4 @@ You can view or download my professional resume here:
   <img alt="pacman contribution graph" src="https://raw.githubusercontent.com/gugs881/gugs881/output/pacman-contribution-graph.svg">
 </picture>
 
-_gerado com [abozanona/pacman-contribution-graph](https://abozanona.github.io/pacman-contribution-graph/)_
 
