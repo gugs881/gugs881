@@ -31,17 +31,7 @@ You can view or download my professional resume here:
 ---
 
 ## 📈 GitHub Stats
-<div align="center"> 
-  <!-- Stats -->
-  <img width="48%"
-       src="https://gugs881-stats.vercel.app/api?username=gugs881&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&cache_seconds=28800&title_color=0abde3&icon_color=1dd1a1&text_color=ffffff&bg_color=0d1117"
-       alt="Gustavo Ferreira GitHub Stats" />
-
-  <!-- Top Languages -->
-  <img width="48%"
-       src="https://gugs881-stats.vercel.app/api/top-langs/?username=gugs881&layout=compact&hide_border=true&langs_count=10&cache_seconds=28800&title_color=0abde3&text_color=ffffff&bg_color=0d1117"
-       alt="Top Languages" />
-</div>
+<div align="center"> <img width="48%" src="https://github-readme-stats.vercel.app/api?username=gugs881&show_icons=true&hide_border=true&title_color=0abde3&icon_color=1dd1a1&text_color=ffffff&bg_color=0d1117" alt="Gustavo Ferreira GitHub Stats" /> <img width="48%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=gugs881&layout=compact&hide_border=true&title_color=0abde3&text_color=ffffff&bg_color=0d1117" /> </div>
 
 
 
