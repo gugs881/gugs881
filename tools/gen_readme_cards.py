@@ -5,7 +5,7 @@ import subprocess
 from collections import Counter
 from jinja2 import Template
 
-# Cores para combinar com seu tema
+# Paleta combinando com seu card
 BG = "0d1117"
 TITLE = "0abde3"
 TEXT = "ffffff"
@@ -18,14 +18,12 @@ def repo_name():
     return os.getenv("GITHUB_REPOSITORY", "repo").split("/")[-1]
 
 def total_commits():
-    # total de commits no repo (todos os branches se possível)
     try:
         return int(run(["git", "rev-list", "--count", "--all"]))
     except subprocess.CalledProcessError:
         return int(run(["git", "rev-list", "--count", "HEAD"]))
 
 def contributors():
-    # lista (autor, n_commits)
     out = run(["git", "shortlog", "-s", "-n", "--all", "--no-merges"])
     rows = []
     for line in out.splitlines():
@@ -38,15 +36,14 @@ def contributors():
                 n = int(parts[0])
             except ValueError:
                 continue
-            name = parts[1]
-            rows.append((name, n))
+            rows.append((parts[1], n))
     return rows
 
 def lines_added_removed():
     """
-    Soma inserções/remoções a partir do `git log --shortstat`.
-    Exemplo de linha:
-      " 1 file changed, 20 insertions(+), 3 deletions(-)"
+    Soma inserções/remoções via `git log --shortstat`.
+    Exemplo:
+      ' 1 file changed, 20 insertions(+), 3 deletions(-)'
     """
     try:
         out = run(["git", "log", "--shortstat", "--pretty=tformat:"])
@@ -74,7 +71,6 @@ def lines_added_removed():
 def _fallback_top_languages():
     """
     Fallback sem pygount: conta linhas por extensão rastreada pelo Git.
-    Não é perfeito, mas entrega um top-langs estável.
     """
     try:
         files = run(["git", "ls-files"]).splitlines()
@@ -82,11 +78,148 @@ def _fallback_top_languages():
         files = []
 
     ext2lang = {
-        ".py": "Python", ".ipynb": "Jupyter Notebook",
-        ".js": "JavaScript", ".ts": "TypeScript",
-        ".jsx": "JavaScript", ".tsx": "TypeScript",
-        ".java": "Java", ".kt": "Kotlin",
-        ".c": "C", ".h": "C", ".cpp": "C++", ".hpp": "C++",
-        ".rs": "Rust", ".go": "Go", ".rb": "Ruby",
-        ".php": "PHP", ".cs": "C#", ".swift": "Swift",
-        ".r": "R", ".m": "MATLAB/Octave",
+        ".py": "Python",
+        ".ipynb": "Jupyter Notebook",
+        ".js": "JavaScript",
+        ".ts": "TypeScript",
+        ".jsx": "JavaScript",
+        ".tsx": "TypeScript",
+        ".java": "Java",
+        ".kt": "Kotlin",
+        ".c": "C",
+        ".h": "C",
+        ".cpp": "C++",
+        ".hpp": "C++",
+        ".rs": "Rust",
+        ".go": "Go",
+        ".rb": "Ruby",
+        ".php": "PHP",
+        ".cs": "C#",
+        ".swift": "Swift",
+        ".r": "R",
+        ".m": "MATLAB/Octave",
+        ".jl": "Julia",
+        ".sh": "Shell",
+        ".bash": "Shell",
+        ".zsh": "Shell",
+        ".sql": "SQL",
+        ".html": "HTML",
+        ".css": "CSS",
+        ".yml": "YAML",
+        ".yaml": "YAML",
+        ".json": "JSON",
+        ".md": "Markdown",
+        ".toml": "TOML",
+        ".ini": "INI",
+    }
+
+    counter = Counter()
+    total = 0
+    for f in files:
+        _, ext = os.path.splitext(f)
+        lang = ext2lang.get(ext.lower())
+        if not lang:
+            continue
+        try:
+            with open(f, "r", encoding="utf-8", errors="ignore") as fh:
+                lines = sum(1 for _ in fh)
+        except Exception:
+            lines = 0
+        if lines <= 0:
+            continue
+        counter[lang] += lines
+        total += lines
+
+    if not total:
+        return 1, [("Other", 1, 100.0)]
+
+    top = counter.most_common(8)
+    top = [(k, v, round(100.0 * v / total, 2)) for k, v in top]
+    return total, top
+
+def top_languages():
+    """
+    Tenta usar pygount (mais preciso). Se falhar, usa fallback.
+    """
+    tmp = "pygount_out.json"
+    try:
+        run(["pygount", "--format=json", "--suffix=all", "--dir", ".", "--out", tmp])
+        with open(tmp, "r", encoding="utf-8") as f:
+            data = json.load(f)
+        try:
+            os.remove(tmp)
+        except Exception:
+            pass
+
+        lang_counter = Counter()
+        for fobj in data:
+            if fobj.get("group") == "empty":
+                continue
+            lang = fobj.get("language") or "Other"
+            code = int(fobj.get("code_count") or 0)
+            if code > 0:
+                lang_counter[lang] += code
+
+        total = sum(lang_counter.values())
+        if total == 0:
+            return _fallback_top_languages()
+
+        top = lang_counter.most_common(8)
+        top = [(k, v, round(100.0 * v / total, 2)) for k, v in top]
+        return total, top
+
+    except Exception:
+        try:
+            if os.path.exists(tmp):
+                os.remove(tmp)
+        except Exception:
+            pass
+        return _fallback_top_languages()
+
+CARD_TPL_STATS = Template("""
+<svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
+  <rect width="495" height="195" rx="10" fill="#{{bg}}"/>
+  <text x="25" y="35" fill="#{{title}}" font-size="18" font-family="Segoe UI, Ubuntu, Sans-Serif" font-weight="600">{{repo}}</text>
+  <text x="25" y="75" fill="#{{text}}" font-size="14" font-family="Segoe UI, Ubuntu, Sans-Serif">Commits: {{commits}}</text>
+  <text x="25" y="100" fill="#{{text}}" font-size="14" font-family="Segoe UI, Ubuntu, Sans-Serif">Autores: {{authors}}</text>
+  <text x="25" y="125" fill="#{{text}}" font-size="14" font-family="Segoe UI, Ubuntu, Sans-Serif">Linhas +: {{added}}  Linhas -: {{removed}}</text>
+  <text x="25" y="160" fill="#{{icon}}" font-size="12" font-family="Segoe UI, Ubuntu, Sans-Serif">local-readme-stats</text>
+</svg>
+""".strip())
+
+CARD_TPL_LANGS = Template("""
+<svg width="495" height="195" viewBox="0 0 495 195" xmlns="http://www.w3.org/2000/svg">
+  <rect width="495" height="195" rx="10" fill="#{{bg}}"/>
+  <text x="25" y="35" fill="#{{title}}" font-size="18" font-family="Segoe UI, Ubuntu, Sans-Serif" font-weight="600">Top Languages</text>
+  {% set x0 = 25 %}{% set y0 = 65 %}{% set barw = 445 %}{% set bh = 14 %}{% set gap = 6 %}
+  {% for name, val, pct in items %}
+    <text x="{{x0}}" y="{{y0 + (bh+gap)*loop.index0 - 2}}" fill="#{{text}}" font-size="12" font-family="Segoe UI, Ubuntu, Sans-Serif">{{name}} ({{pct}}%)</text>
+    <rect x="{{x0 + 200}}" y="{{y0 + (bh+gap)*loop.index0 - 13}}" width="{{(barw-220) * pct/100.0}}" height="{{bh}}" rx="4" fill="#{{icon}}"/>
+  {% endfor %}
+  <text x="25" y="180" fill="#{{text}}" font-size="12" font-family="Segoe UI, Ubuntu, Sans-Serif">Total linhas de código: {{total}}</text>
+</svg>
+""".strip())
+
+def main():
+    os.makedirs("cards", exist_ok=True)
+
+    commits = total_commits()
+    authors = len(contributors())
+    added, removed = lines_added_removed()
+    total_code, langs = top_languages()
+
+    with open("cards/stats.svg", "w", encoding="utf-8") as f:
+        f.write(CARD_TPL_STATS.render(
+            bg=BG, title=TITLE, text=TEXT, icon=ICON,
+            repo=repo_name(), commits=commits, authors=authors,
+            added=added, removed=removed
+        ))
+
+    with open("cards/top-langs.svg", "w", encoding="utf-8") as f:
+        f.write(CARD_TPL_LANGS.render(
+            bg=BG, title=TITLE, text=TEXT, icon=ICON,
+            items=langs, total=total_code
+        ))
+
+if __name__ == "__main__":
+    main()
