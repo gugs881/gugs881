@@ -3,14 +3,14 @@
   <text x="25" y="35" fill="#0abde3" font-size="18" font-family="Segoe UI, Ubuntu, Sans-Serif" font-weight="600">Top Languages</text>
   
   
-    <text x="25" y="63" fill="#ffffff" font-size="12" font-family="Segoe UI, Ubuntu, Sans-Serif">Python (65.98%)</text>
-    <rect x="225" y="52" width="148.455" height="14" rx="4" fill="#1dd1a1"/>
+    <text x="25" y="63" fill="#ffffff" font-size="12" font-family="Segoe UI, Ubuntu, Sans-Serif">Python (66.77%)</text>
+    <rect x="225" y="52" width="150.2325" height="14" rx="4" fill="#1dd1a1"/>
   
-    <text x="25" y="83" fill="#ffffff" font-size="12" font-family="Segoe UI, Ubuntu, Sans-Serif">YAML (17.3%)</text>
-    <rect x="225" y="72" width="38.925" height="14" rx="4" fill="#1dd1a1"/>
+    <text x="25" y="83" fill="#ffffff" font-size="12" font-family="Segoe UI, Ubuntu, Sans-Serif">YAML (17.51%)</text>
+    <rect x="225" y="72" width="39.39750000000001" height="14" rx="4" fill="#1dd1a1"/>
   
-    <text x="25" y="103" fill="#ffffff" font-size="12" font-family="Segoe UI, Ubuntu, Sans-Serif">Markdown (16.72%)</text>
-    <rect x="225" y="92" width="37.62" height="14" rx="4" fill="#1dd1a1"/>
+    <text x="25" y="103" fill="#ffffff" font-size="12" font-family="Segoe UI, Ubuntu, Sans-Serif">Markdown (15.73%)</text>
+    <rect x="225" y="92" width="35.3925" height="14" rx="4" fill="#1dd1a1"/>
   
-  <text x="25" y="180" fill="#ffffff" font-size="12" font-family="Segoe UI, Ubuntu, Sans-Serif">Total linhas de código: 341</text>
+  <text x="25" y="180" fill="#ffffff" font-size="12" font-family="Segoe UI, Ubuntu, Sans-Serif">Total linhas de código: 337</text>
 </svg>
