@@ -48,10 +48,7 @@ You can view or download my professional resume here:
 
 </div>
 
-<div align="center">
-  <br>
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gugs881&theme=transparent&ring=00bfff&fire=00bfff&currStreakLabel=00bfff" alt="GitHub Streak - Gustavo Ferreira" height="200px"/>
-</div>
+
 
 
 
