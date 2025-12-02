@@ -32,30 +32,27 @@ You can view or download my professional resume here:
 
 ## 📈 GitHub Stats
 
-<div align="center">
+<div align="center" style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
 
-  <!-- Profile details -->
-  <img
-       src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=gugs881&theme=github_dark"
-       alt="GitHub Profile Summary"
-       width="100%"
-  />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-six-seven.vercel.app/api?username=gugs881&show_icons=true&count_private=true&theme=transparent&title_color=00bfff&icon_color=00bfff&text_color=ffffff">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-six-seven.vercel.app/api?username=gugs881&show_icons=true&count_private=true&theme=default">
+    <img alt="GitHub Stats - Gustavo Ferreira" src="https://github-readme-stats-six-seven.vercel.app/api?username=gugs881&show_icons=true&count_private=true&theme=default" height="200px">
+  </picture>
 
-  <br/><br/>
-
-  <!-- Most used languages -->
-  <img
-       src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=gugs881&theme=github_dark"
-       alt="Repos per Language"
-       width="48%"
-  />
-  <img
-       src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=gugs881&theme=github_dark"
-       alt="Most Commit Language"
-       width="48%"
-  />
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-six-seven.vercel.app/api/top-langs/?username=gugs881&layout=compact&langs_count=8&theme=transparent&title_color=00bfff&text_color=ffffff">
+    <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-six-seven.vercel.app/api/top-langs/?username=gugs881&layout=compact&langs_count=8&theme=default">
+    <img alt="Top Languages - Gustavo Ferreira" src="https://github-readme-stats-six-seven.vercel.app/api/top-langs/?username=gugs881&layout=compact&langs_count=8&theme=default" height="200px">
+  </picture>
 
 </div>
+
+<div align="center">
+  <br>
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=gugs881&theme=transparent&ring=00bfff&fire=00bfff&currStreakLabel=00bfff" alt="GitHub Streak - Gustavo Ferreira" height="200px"/>
+</div>
+
 
 
 
