@@ -34,17 +34,18 @@ You can view or download my professional resume here:
 
 <div align="center">
   <img 
-       width="48%" 
-       src="https://stats.dooboo.io/api?username=gugs881&show_icons=true&hide_border=true&title_color=0abde3&icon_color=1dd1a1&text_color=ffffff&bg_color=0d1117"
+       width="48%"
+       src="https://github-readme-stats.vercel.app/api?username=gugs881&show_icons=true&hide_border=true&title_color=0abde3&icon_color=1dd1a1&text_color=ffffff&bg_color=0d1117&cache_seconds=7200&v=1"
        alt="Gustavo Ferreira GitHub Stats"
   />
 
   <img 
-       width="48%" 
-       src="https://stats.dooboo.io/api/top-langs/?username=gugs881&layout=compact&hide_border=true&title_color=0abde3&text_color=ffffff&bg_color=0d1117"
+       width="48%"
+       src="https://github-readme-stats.vercel.app/api/top-langs/?username=gugs881&layout=compact&hide_border=true&title_color=0abde3&text_color=ffffff&bg_color=0d1117&cache_seconds=7200&v=1"
        alt="Top Languages"
   />
 </div>
+
 
 
 
