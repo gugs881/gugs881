@@ -36,12 +36,12 @@ You can view or download my professional resume here:
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-six-seven.vercel.app/api?username=gugs881&show_icons=true&count_private=true&theme=transparent&title_color=00bfff&icon_color=00bfff&text_color=ffffff">
     <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-six-seven.vercel.app/api?username=gugs881&show_icons=true&count_private=true&theme=default">
-    <img alt="GitHub Stats - Gustavo Ferreira" src="https://github-readme-stats-six-seven.vercel.app/api?username=gugs881&show_icons=true&count_private=true&theme=default" height="200px">
+    <img alt="GitHub Stats - Gustavo Ferreira" src="https://github-readme-stats-six-seven.vercel.app/api?username=gugs881&show_icons=true&count_private=true&theme=default" height="180px">
   </picture>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats-six-seven.vercel.app/api/top-langs/?username=gugs881&layout=compact&langs_count=8&theme=transparent&title_color=00bfff&text_color=ffffff">
     <source media="(prefers-color-scheme: light)" srcset="https://github-readme-stats-six-seven.vercel.app/api/top-langs/?username=gugs881&layout=compact&langs_count=8&theme=default">
-    <img alt="Top Languages - Gustavo Ferreira" src="https://github-readme-stats-six-seven.vercel.app/api/top-langs/?username=gugs881&layout=compact&langs_count=8&theme=default" height="200px">
+    <img alt="Top Languages - Gustavo Ferreira" src="https://github-readme-stats-six-seven.vercel.app/api/top-langs/?username=gugs881&layout=compact&langs_count=8&theme=default" height="180px">
   </picture>
 
 </div>
